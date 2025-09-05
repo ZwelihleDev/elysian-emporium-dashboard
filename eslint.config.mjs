@@ -18,7 +18,16 @@ const eslintConfig = [
       "out/**",
       "build/**",
       "next-env.d.ts",
+      "lib/generated/**",
+      "components/motion-primitives/**",
+      "hooks/usePreventScroll.tsx",
+      "components/event-calendar/**"
     ],
+  },
+  {
+    rules: {
+      "react/no-unescaped-entities": "off",
+    },
   },
 ];
 
