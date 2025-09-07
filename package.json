@@ -2,11 +2,15 @@
   "name": "elysian-emporium-dashboard",
   "version": "0.1.0",
   "private": true,
+  "overrides": {
+    "react-is": "^19.0.0-rc-69d4b800-20241021"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@blocknote/core": "^0.37.0",
