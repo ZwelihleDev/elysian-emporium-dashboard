@@ -67,7 +67,7 @@ export async function checkExpiredBansAction(): Promise<ApiResponse> {
       status: "success", 
       message: `Unbanned ${unbannedUsers.length} users with expired bans` 
     };
-  } catch (error) {
+  } catch (_error) {
     return { status: "error", message: "Failed to check expired bans" };
   }
 }

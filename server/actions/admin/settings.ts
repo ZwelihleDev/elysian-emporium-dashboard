@@ -40,7 +40,7 @@ export async function updateAdminSettingsAction(
     revalidatePath("/admin/settings");
 
     return { status: "success", message: "Settings Updated Successfully" };
-  } catch (error) {
+  } catch (_error) {
     return { status: "error", message: "Failed to update settings" };
   }
 }
@@ -74,7 +74,7 @@ export async function getAdminSettingsAction(): Promise<AdminSettingsSchemaType>
       twoFactorAuth: settings.twoFactorAuth,
       loginAttemptLimit: settings.loginAttemptLimit,
     };
-  } catch (error) {
+  } catch (_error) {
     return {
       siteName: "Elysian Emporium",
       siteDescription: "A modern ecommerce platform",

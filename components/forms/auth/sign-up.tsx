@@ -19,7 +19,7 @@ import {
 } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import GoogleIcon from "@/components/icons/google";
+
 import GitHubIcon from "@/components/icons/github";
 import { Spinner } from "@/components/ui/loader";
 import { signUpAction } from "@/server/actions/auth/user";
@@ -30,7 +30,7 @@ const SignUpForm = ({ className, ...props }: React.ComponentProps<"form">) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const [gitHubPending, startGitHubTransition] = useTransition();
-  const [googlePending, startGoogleTransition] = useTransition();
+
 
   // validation
   const form = useForm<z.infer<typeof signUpFormSchema>>({

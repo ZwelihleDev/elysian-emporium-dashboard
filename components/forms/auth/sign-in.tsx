@@ -21,7 +21,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { authClient } from "@/lib/auth-client";
-import GoogleIcon from "@/components/icons/google";
+
 import GitHubIcon from "@/components/icons/github";
 import { Card, CardContent } from "@/components/ui/card";
 import { Spinner } from "@/components/ui/loader";
@@ -35,7 +35,7 @@ const SignInForm = ({ className, ...props }: React.ComponentProps<"div">) => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const [gitHubPending, startGitHubTransition] = useTransition();
-  const [googlePending, startGoogleTransition] = useTransition();
+
 
   // validation
   const form = useForm<z.infer<typeof signInFormSchema>>({

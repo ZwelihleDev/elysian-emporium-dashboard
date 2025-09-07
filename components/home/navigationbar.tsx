@@ -11,7 +11,7 @@ import ElysianLogo from "@/components/ui/elysian-logo";
 
 import { navigationMenuItems } from "@/data/constants/navigation";
 import { authClient } from "@/lib/auth-client";
-import { useSignOut } from "@/hooks/use-sign-out";
+
 import ThemeSwitcher from "../ui/theme-switcher";
 import NotificationMenu from "../notification/notification-menu";
 import UserDropdown from "../user/user-dropdown";

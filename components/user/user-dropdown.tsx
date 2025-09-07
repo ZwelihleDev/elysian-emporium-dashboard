@@ -2,10 +2,6 @@
 
 import React from "react";
 import {
-  BoltIcon,
-  BookOpenIcon,
-  CrownIcon,
-  Layers2Icon,
   LogOutIcon,
   UserPenIcon,
 } from "lucide-react";

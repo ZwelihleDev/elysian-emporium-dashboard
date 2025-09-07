@@ -4,10 +4,6 @@ export const navigationMenuItems = [
     target: "/",
   },
   {
-    title: "Features",
-    target: "/",
-  },
-  {
     title: "Dashboard",
     target: "/admin",
   },
