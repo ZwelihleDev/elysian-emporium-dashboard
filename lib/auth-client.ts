@@ -5,5 +5,5 @@ import { organizationClient } from "better-auth/client/plugins";
 
 export const authClient = createAuthClient({
   plugins: [emailOTPClient(), adminClient(), organizationClient()],
-  baseURL: "http://localhost:3000",
+  baseURL: "https://elysian-emporium-dashboard.vercel.app",
 });
