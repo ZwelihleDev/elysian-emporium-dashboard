@@ -98,7 +98,7 @@ const Hero = () => {
                     size="lg"
                  
                   >
-                    <Link href="/dashboard">
+                    <Link href="/admin">
                       <span className="text-nowrap">Start Building</span>
                     </Link>
                   </Button>
